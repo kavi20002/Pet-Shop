@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dog_item_view">
+
+        <View
+            android:id="@+id/dogItemView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/dogImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/pedigree"
+            app:layout_constraintBottom_toBottomOf="@+id/dogItemView"
+            app:layout_constraintEnd_toEndOf="@+id/dogItemView"
+            app:layout_constraintStart_toStartOf="@+id/dogItemView"
+            app:layout_constraintTop_toTopOf="@+id/dogItemView"/>
+
+        <TextView
+            android:id="@+id/dogItemName"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Title"
+            android:textColor="@color/text1"
+            android:textSize="18sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dogItemView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/dogItemPrice"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="@color/text1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dogItemName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

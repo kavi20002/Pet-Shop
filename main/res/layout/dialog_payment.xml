@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cash"
+            android:padding="16dp"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:buttonTint="@color/button"/>
+
+        <RadioButton
+            android:id="@+id/Card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card"
+            android:padding="16dp"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:buttonTint="@color/button"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSelectPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/method"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66CDAA">
+
+        <View
+            android:id="@+id/accessoryItemView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/accessoryImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/a1"
+            app:layout_constraintBottom_toBottomOf="@+id/accessoryItemView"
+            app:layout_constraintEnd_toEndOf="@+id/accessoryItemView"
+            app:layout_constraintStart_toStartOf="@+id/accessoryItemView"
+            app:layout_constraintTop_toTopOf="@+id/accessoryItemView"/>
+
+        <TextView
+            android:id="@+id/accessoryItemName"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Title"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/text1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accessoryItemView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/accessoryItemPrice"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="@color/text1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accessoryItemName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

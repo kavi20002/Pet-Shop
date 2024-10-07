@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_radio_button_unchecked_24"
+            android:id="@+id/completeButton"
+            android:contentDescription="@string/checkbox"
+            android:minHeight="48dp"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/completeButton"
+            android:text="This mytask 1"
+            android:textAlignment="textStart" />
+
+
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDescription"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@+id/taskTime"
+            android:layout_toEndOf="@+id/completeButton"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/taskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="time" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
